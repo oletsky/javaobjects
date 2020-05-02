@@ -17,7 +17,7 @@ interface WithDefaults {
     }
 
     default void defaultFoo2() {
-        System.out.println("This should be done to");
+        System.out.println("This should be done too");
     }
 }
 
