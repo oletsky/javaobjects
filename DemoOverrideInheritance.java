@@ -8,13 +8,15 @@ public class DemoOverrideInheritance {
 }
 
 class Inherited {
-    void foo() {
+    public void foo() {
         System.out.println("Superclass method");
     }
 }
 
 class Inheritor extends Inherited{
-    void foo() {
+
+    @Override
+    public void foo() {
         System.out.println("Subclass method");
     }
 }
