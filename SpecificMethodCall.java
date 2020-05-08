@@ -1,14 +1,17 @@
-package javatraining.oletsky.oop;
+package newfeatures;
 
 public class SpecificMethodCall {
     public static void main(String[] args) {
         BaseKlass b = new SubKlass();
-        ((SubKlass) b).other();
+        if (b instanceof SubKlass) {
+            ((SubKlass) b).other();
+        }
     }
 }
 
 class BaseKlass {
-   void foo() {}
+    void foo() {
+    }
 }
 
 class SubKlass extends BaseKlass {
@@ -16,3 +19,4 @@ class SubKlass extends BaseKlass {
         System.out.println("Specific method called");
     }
 }
+
